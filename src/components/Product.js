@@ -6,9 +6,8 @@ const Product = () => {
   const products = useSelector(state => state.allProducts.products)
   const renderProduct = products.map((product) => {
       const { title , price , id, category, image } = product;
-      console.log(product);
       return (
-        <Link to={`product/:productId`}>
+        <Link to={`product/${id}`}>
           <div className="ui link cards" key={id}>
             <div className="card">
               <div className="image">

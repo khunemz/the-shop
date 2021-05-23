@@ -9,7 +9,7 @@ function App() {
     <>
       <Router>
         <Header />
-        <div className="ui container" style={{ marginTop: '60px'}}>
+        <div className="ui grid container" style={{ marginTop: '60px'}}>
           <Switch>
             <Route path="/" exact component={ProductList}></Route>
             <Route path="/product/:productId" exact component={ProductDetail}></Route>
